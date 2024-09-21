@@ -177,8 +177,8 @@ export default function Home() {
           borderRadius: "15px",
         }}
       >
-        <h1 style={{ justifyContent: "center" }}>Đánh giá của bạn</h1>
-        <h3 style={{ marginBottom: "15px", marginTop: "10px" }}>
+        <h1 style={{ justifyContent: "center",fontSize:"30px" }}>Đánh giá của bạn</h1>
+        <h3 style={{ marginBottom: "15px", marginTop: "10px",fontSize:"15px" }}>
           Chúng tôi rất mong nhận được ý kiến đóng góp từ bạn để cải thiện dịch vụ tốt hơn.
         </h3>
 
@@ -207,7 +207,8 @@ export default function Home() {
           <br />
           <br />
 
-          <button type="submit" >Gửi đánh giá</button>
+          <button type="submit" style={{ background: 'green' }}>Gửi đánh giá</button>
+
         </form>
       </div>
 
@@ -267,7 +268,6 @@ export default function Home() {
         </div>
       </section>
       <section id="blog" className="blog">
-        <h1 className="heading">Sự kiện</h1>
         <h3 className="title">Sự kiện đề xuất</h3>
 
         <div className="box-container">
