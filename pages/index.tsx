@@ -7,8 +7,6 @@ import about3 from 'assets/about-3.png';
 import blog1 from 'assets/blog 1.png';
 import blog2 from 'assets/blog 2.png';
 import blog3 from 'assets/blog 3.png';
-import img2 from 'assets/img-2.jpg';
-import img3 from 'assets/img-3.jpg';
 import pta from 'assets/pta.jpg';
 import minh from 'assets/minh.jpg';
 import giap from 'assets/giap.jpg';
