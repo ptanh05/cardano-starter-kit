@@ -71,7 +71,7 @@
 
   /* header navbar section start  */
 
-  /* header{
+  header{
     width: 96%;
     background: var(--wight);
     position:fixed;
@@ -83,7 +83,7 @@
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
-  } */
+  }
 
   .fixed-nav {
     position: fixed;   /* Giữ thẻ cố định */
