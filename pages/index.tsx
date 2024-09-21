@@ -1,114 +1,342 @@
-import { CommandLineIcon } from "components/icons/CommandLineIcon"
+import { Inter } from "@next/font/google";
+import Image from 'next/image';
+import HomePng from "assets/home.png";
+import about1 from 'assets/about-1.png';
+import about2 from 'assets/about-2.png';
+import about3 from 'assets/about-3.png';
+import blog1 from 'assets/blog 1.png';
+import blog2 from 'assets/blog 2.png';
+import blog3 from 'assets/blog 3.png';
+import img2 from 'assets/img-2.jpg';
+import img3 from 'assets/img-3.jpg';
+import pta from 'assets/pta.jpg';
+import minh from 'assets/minh.jpg';
+import giap from 'assets/giap.jpg';
+import trong from 'assets/trong.jpg';
 
-import { Inter } from "@next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="text-center max-w-4xl m-auto text-gray-900 dark:text-gray-100">
-      <h1
-        style={inter.style}
-        className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl"
+    <div>
+      <section id="home" className="home">
+        <div className="row">
+          <div className="images">
+          <Image src={HomePng} width={528} height={528} />
+          </div>
+          <div className="content">
+            <h1>
+              <span>Luôn </span>bảo mật, <span>Luôn </span>riêng tư
+            </h1>
+            <p>Lưu trữ hồ sơ bệnh án phi tập trung.</p>
+            <a href="#">
+              <button className="button">Đọc thêm</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="about">
+        <h1 className="heading">Về cơ sở của các bệnh viện.</h1>
+        <ol>
+          <li className="title">1.Bệnh viện Bạch Mai</li>
+          <li className="title">2.Bệnh viện Hữu Nghị</li>
+          <li className="title">3.Bệnh viện E Hà Nội</li>
+          <li className="title">4.Bệnh viện Việt-Đức</li>
+          <li className="title">5.Bệnh viện Đống Đa</li>
+        </ol>
+
+        <div className="box-container">
+          <div className="box">
+            <div className="images">
+            <Image src={about1} width={528} height={528} />
+              </div>
+            <div className="content">
+              <h3>dịch vụ xe cứu thương</h3>
+              <p>
+                Bản thân công ty đã là một công ty rất thành công. Từ nhu cầu của
+                mọi người, anh ấy nhận được trách nhiệm lớn lao từ nỗi đau.
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="images">
+            <Image src={about2} width={528} height={528} />
+            </div>
+            <div className="content">
+              <h3>phòng cấp cứu</h3>
+              <p>
+                Bản thân công ty đã là một công ty rất thành công. Từ nhu cầu của
+                mọi người, anh ấy nhận được trách nhiệm lớn lao từ nỗi đau.
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="images">
+            <Image src={about3} width={528} height={528} />
+            </div>
+            <div className="content">
+              <h3>kiểm tra miễn phí</h3>
+              <p>
+                Bản thân công ty đã là một công ty rất thành công. Từ nhu cầu của
+                mọi người, anh ấy nhận được trách nhiệm lớn lao từ nỗi đau.
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="doctor" className="card" >
+        <div className="container" style={{ width: '1440px' }} >
+          <h1 className="heading">Đội của chúng tôi</h1>
+          <h3 className="title">Chi tiết từng thành viên</h3>
+
+          <div className="box-container">
+            <div className="box" >
+            <Image src={minh} width={528} height={528} />
+              <div className="content">
+                <a href="#">
+                  <h2>Nguyễn Tuấn Minh</h2>
+                </a>
+                <div className="icons">
+                  <a href="#" className="fab fa-facebook-f"></a>
+                  <a href="#" className="fab fa-twitter"></a>
+                  <a href="#" className="fab fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="box">
+            <Image src={giap} width={528} height={528} />
+              <div className="content">
+                <a href="#">
+                  <h2>Phạm Văn Giáp</h2>
+                </a>
+                <div className="icons">
+                  <a href="#" className="fab fa-facebook-f"></a>
+                  <a href="#" className="fab fa-twitter"></a>
+                  <a href="#" className="fab fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="box">
+            <Image src={pta} width={528} height={528} />
+              <div className="content">
+                <a href="#">
+                  <h2>Phùng Thế Anh</h2>
+                </a>
+                <div className="icons">
+                  <a href="#" className="fab fa-facebook-f"></a>
+                  <a href="#" className="fab fa-twitter"></a>
+                  <a href="#" className="fab fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="box">
+            <Image src={trong} width={528} height={528} />
+              <div className="content">
+                <a href="#">
+                  <h2>Phạm Văn Trọng</h2>
+                </a>
+                <div className="icons">
+                  <a href="#" className="fab fa-facebook-f"></a>
+                  <a href="#" className="fab fa-twitter"></a>
+                  <a href="#" className="fab fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        style={{
+          width: "800px",
+          padding: "20px",
+          justifyContent: "center",
+          margin: "0 auto",
+          boxShadow: "0 0 10px rgba(76, 175, 80, 0.5)",
+          borderRadius: "15px",
+        }}
       >
-        Cardano Starter Kit
-      </h1>
+        <h1 style={{ justifyContent: "center" }}>Đánh giá của bạn</h1>
+        <h3 style={{ marginBottom: "15px", marginTop: "10px" }}>
+          Chúng tôi rất mong nhận được ý kiến đóng góp từ bạn để cải thiện dịch vụ tốt hơn.
+        </h3>
 
-      <p
-        style={inter.style}
-        className="mb-6 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
-      >
-        Build Web3 applications on Cardano
-      </p>
+        <form action="/submit-feedback" method="POST">
+          <label htmlFor="name">Họ và Tên:</label>
+          <br />
+          <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required />
+          <br />
+          <br />
 
-      <div style={inter.style} className="my-4 text-left ">
-        This is a starter kit for building cardano web3 applications. It uses{" "}
-        <a
-          className="underline underline-offset-2"
-          href="https://use-cardano.alangaming.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          use-cardano
-        </a>{" "}
-        which is a React hook, context, and set of components for interacting with the Cardano
-        blockchain, which is built on top of{" "}
-        <a
-          className="underline underline-offset-2"
-          href="https://lucid.spacebudz.io/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Lucid
-        </a>{" "}
-        and provides a simple API for interacting with the Cardano blockchain.
+          <label htmlFor="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required />
+          <br />
+          <br />
+
+          <label htmlFor="phone">Số điện thoại:</label>
+          <br />
+          <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" />
+          <br />
+          <br />
+
+          <label htmlFor="comments">Ý kiến đóng góp:</label>
+          <br />
+          <textarea id="comments" name="comments" rows="5" placeholder="Viết đánh giá của bạn tại đây" required />
+          <br />
+          <br />
+
+          <button type="submit" >Gửi đánh giá</button>
+        </form>
       </div>
 
-      <div style={inter.style} className="my-4 text-left">
-        The aim of this project is to serve as a simple starting point, but also to help developers
-        get into Cardano dApp development. With that said, this tech stack provides all
-        functionality needed for writing off chain code for dApps and should scale with your needs.
-      </div>
+      <section id="review" className="review">
+        <h1 className="heading">đánh giá của bệnh nhân chúng tôi</h1>
+        <h3 className="title">những đánh giá</h3>
 
-      <div style={inter.style} className="my-4 text-left">
-        <span className="italic text-gray-500">
-          In an upcoming version of this boilerplate, we aim to include a DSL (Domain Specific
-          Language) for the on-chain components of Cardano dApp development. We are still deciding
-          on which language to use, but we are considering either{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://www.hyperion-bt.org/Helios-Book/intro.html"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Helios
-          </a>
-          ,{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://aiken-lang.github.io/aiken/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Aiken
-          </a>
-          , or{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://www.harmoniclabs.tech/plu-ts-docs/index.html"
-            rel="noreferrer"
-            target="_blank"
-          >
-            plu-ts
-          </a>
-          .
-        </span>
-      </div>
+        <div className="box-container">
+          <div className="box">
+            <i className="fas fa-quote-left"></i>
+            <p>
+            "Blockchain giúp việc chia sẻ thông tin y tế giữa các bệnh viện nhanh chóng và an toàn hơn. Tôi đã từng phải chuyển viện và thấy quá trình này được thực hiện dễ dàng hơn nhờ công nghệ này."
+            </p>
 
-      <div style={inter.style} className="my-4 text-left">
-        The starter project is built on top of Next.js, which is a React framework for building
-        static and dynamic websites. It is a great choice for building dApps, as it is easy to use,
-        and provides a lot of functionality out of the box. It also has a great developer
-        experience, which makes it easy to get started.
-      </div>
+            <div className="images">
+            <Image src={img3} width={528} height={528} />
 
-      <div style={inter.style} className="my-4 text-left">
-        For styling, we are using Tailwind CSS, which is a utility-first CSS framework with a good
-        balance of flexibility, composability, and ease of use. It is also very easy to use with
-        Next.js, and provides a lot of functionality out of the box.
-      </div>
+              <div className="info">
+                <h3>john doe 1</h3>
+                <span>Ngày : 11 2024</span>
+              </div>
+            </div>
+          </div>
 
-      <div style={inter.style} className="mt-12 mb-4">
-        <a
-          className="underline underline-offset-4"
-          href="https://github.com/use-cardano/cardano-starter-kit/generate"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <CommandLineIcon className="inline mr-1" />
-          Fork the repository to use the template
-        </a>
-      </div>
+          <div className="box">
+            <i className="fas fa-quote-left"></i>
+            <p>
+            "Tôi rất hài lòng với hệ thống này. Hồ sơ y tế của tôi luôn được cập nhật chính xác và không có sai sót. Blockchain giúp tôi yên tâm vì thông tin của mình không bị giả mạo hay chỉnh sửa."
+            </p>
+
+            <div className="images">
+            <Image src={img2} width={528} height={528} />
+
+              <div className="info">
+                <h3>john doe 2</h3>
+                <span>Ngày : 12 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <i className="fas fa-quote-left"></i>
+            <p>
+            "Tôi cảm thấy an tâm hơn khi biết rằng hồ sơ y tế của mình được bảo mật qua công nghệ Blockchain. Mọi thông tin đều được lưu trữ an toàn và không thể bị thay đổi, giúp tôi tin tưởng hơn vào chất lượng dịch vụ."
+            </p>
+
+            <div className="images">
+            <Image src={img2} width={528} height={528} />
+
+              <div className="info">
+                <h3>john doe 3</h3>
+                <span>Ngày : 12 2024</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="blog" className="blog">
+        <h1 className="heading">Sự kiện</h1>
+        <h3 className="title">Sự kiện đề xuất</h3>
+
+        <div className="box-container">
+          <div className="box">
+          <Image src={blog1} width={528} height={528} />
+            <div className="content">
+              <a href="#">
+                <h2>Tiểu đường</h2>
+              </a>
+              <p>
+                "Bệnh viện cam kết cung cấp giải pháp toàn diện cho bệnh tiểu
+                đường thông qua các chương trình điều trị cá nhân hóa, bao gồm
+                quản lý chế độ ăn uống, hoạt động thể chất, theo dõi đường
+                huyết và điều trị bằng thuốc, nhằm giúp bệnh nhân kiểm soát bệnh
+                tật hiệu quả và cải thiện chất lượng cuộc sống."
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="box">
+          <Image src={blog2} width={528} height={528} />
+            <div className="content">
+              <a href="#">
+                <h2>COVID-19 vaccine</h2>
+              </a>
+              <p>
+                “Chúng tôi khuyến khích tất cả mọi người tiêm vaccine COVID-19
+                để bảo vệ sức khỏe cộng đồng và ngăn ngừa sự lây lan của virus,
+                đồng thời cung cấp các dịch vụ tiêm chủng an toàn và hiệu quả
+                tại bệnh viện của chúng tôi.”
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="box">
+          <Image src={blog3} width={528} height={528} />
+            <div className="content">
+              <a href="#">
+                <h2>Phòng ngừa bệnh</h2>
+              </a>
+              <p>
+                "Để phòng ngừa bệnh tật, bệnh viện chúng tôi cam kết cung cấp các
+                chương trình kiểm tra sức khỏe định kỳ, tư vấn dinh dưỡng và
+                hướng dẫn lối sống lành mạnh, nhằm giúp cộng đồng phát hiện sớm
+                nguy cơ và duy trì sức khỏe tốt nhất."
+              </p>
+              <a href="#">
+                <button className="button">Chi tiết</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="footer">
+        <div className="box">
+          <h2 className="logo">
+            <span>Quay </span>lại đầu trang
+          </h2>
+          <a href="#">Home</a>
+        </div>
+
+        <h1 className="credit">
+          Được tạo bởi <span>MedicRec.</span> Nhằm hỗ trợ bệnh viện lưu trữ hồ
+          sơ bệnh án phi tập trung.
+        </h1>
+      </section>
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { Footer } from "components/Footer"
+// import { Footer } from "components/Footer"
 import { Navigation } from "components/Navigation"
 import Head from "next/head"
 import { PropsWithChildren } from "react"
@@ -22,7 +22,7 @@ export const DefaultLayout = ({ children }: PropsWithChildren<{}>) => {
 
         <main className="h-[calc(100vh-295px)] pt-12">{children}</main>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )
